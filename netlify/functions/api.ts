@@ -1,5 +1,7 @@
 import serverless from "serverless-http";
-
 import { createServer } from "../../server";
 
-export const handler = serverless(createServer());
+const app = createServer();
+
+// This is the magic that turns your Express app into a serverless function
+export const handler = serverless(app);

@@ -1,15 +1,12 @@
 [build]
-  command = "npm run build:client"
-  functions = "netlify/functions"
+  # This command runs your existing build script
+  command = "pnpm build"
+  # The directory where your built frontend is located
   publish = "dist/spa"
+  # The directory where your serverless function will be
+  functions = "netlify/functions"
 
-
-[functions]
-  external_node_modules = ["express"]
-  node_bundler = "esbuild"
-  
 [[redirects]]
-  force = true
   from = "/api/*"
-  status = 200
   to = "/.netlify/functions/api/:splat"
+  status = 200
