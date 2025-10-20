@@ -24,7 +24,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "gsap": "^3.13.0",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "mathjs": "^13.0.0"
   },
   "devDependencies": {
     "@hookform/resolvers": "^3.3.4",
