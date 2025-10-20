@@ -66,7 +66,7 @@ export const ExperienceSection = () => {
       <div className="mx-auto flex w-[min(95%,1100px)] flex-col gap-12 py-24">
         
         {/* 👇 Move heading slightly left */}
-        <div className="-ml-10 md:-ml-48">
+        <div className="sm:-ml-4 md:-ml-48">
           <SectionHeading
             title={t.experience.heading}
             subtitle={t.experience.subtitle}

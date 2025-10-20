@@ -10,7 +10,7 @@ export const SkillsSection = () => {
   return (
     <section id="skills" className="relative">
       <div className="mx-auto flex w-[min(90%,1100px)] flex-col gap-10 py-24">
-        <div className="-ml-10 md:-ml-48">
+        <div className="sm:-ml-4 md:-ml-48">
           <SectionHeading
             title={t.skills.heading}
             subtitle={t.skills.subtitle}
